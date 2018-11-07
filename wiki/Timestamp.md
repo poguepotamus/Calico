@@ -18,11 +18,11 @@ The timestamp is constructed to allow an accurate representation of time in a sm
 
 ### Logical definitions
 
-  Name      | Logical encoding      | Data type
-------------|-----------------------|-----------
-Start time  | Unix timestamp in UCT | `int`
-Duration    | In seconds (Unix)     | `int`
-Time zone   | UTC Offset in hours   | `int`
+  Name    | Logical encoding      | Data type
+----------|-----------------------|-----------
+Start     | Unix timestamp in UCT | `int`
+Duration  | In seconds (Unix)     | `int`
+Offset    | UTC Offset in hours   | `int`
 
 ### Example
 

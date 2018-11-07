@@ -18,10 +18,10 @@ User ID | Username | Password | Email | Workspaces
 
 ### Logical definitions
 
- Name		| Logical encoding		| Data type
+ Name       | Logical encoding      | Data type
 ------------|-----------------------|-----------
-User ID		| None 					| `int`
-Username	| None                  | `str`
-Password 	| Base64                | `int`
-Email		| None                  | `str`
-Workspaces	| None                  | `int`
+User ID     | None                  | `int`
+Username    | None                  | `str`
+Password    | Base64                | `int`
+Email       | None                  | `str`
+Workspaces  | None                  | `int`

@@ -48,3 +48,10 @@ Completion    | None                     | `bool`
 Priority      | None                     | `int`
 Tags          | None                     | `[str]`
 Assignees     | None                     | `[int]`
+
+### Table Structure
+
+| Page Title | Page ID | Project ID | Workspace ID | Event Times | Tracked Times | Due | Completion | Priority | Tags | Assignees |
+|-|-|-|-|-|-|-|-|-|-|-|
+| Finish projects description | 00000004 | 00000008 | 00000001 | [{ "start": 1541584800, "duration": 3600, "offset": None, }] | None | 1542672000 | False | 1 | ["Documentation"] | [00000001] |
+
