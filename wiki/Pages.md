@@ -14,10 +14,11 @@ A page is constructed to be very versatile, not necessarily efficient.
 
 <table style="text-align: center;">
     <tr>
-        <th colspan=6> Page Title </th>
+        <th colspan=5> Page Title </th>
+        <th colspan=1> Project </th>
     </tr> <tr>
         <td colspan=2> Page ID </td>
-        <td colspan=2> Project ID </td>
+        <td colspan=2> Parent ID </td>
         <td colspan=2> Workspace ID </td>
     </tr> <tr>
         <td colspan=2> Event times </td>
@@ -36,9 +37,10 @@ A page is constructed to be very versatile, not necessarily efficient.
 Name          | Logical encoding         | Data Type
 --------------|--------------------------|----------
 Page Title    | None                     | `String`
+Project       | None                     | `bool`
 ||
 Page ID       | None                     | `int`
-Project ID    | None                     | `int`
+Parent ID     | None                     | `int`
 ||
 Event times   | [Timestamp](Timestamp)   | `[Timestamp]`
 Tracked time  | [Timestamp](Timestamp)   | `[Timestamp]`
@@ -51,7 +53,8 @@ Assignees     | None                     | `[int]`
 
 ### Table Structure
 
-| Page Title | Page ID | Project ID | Workspace ID | Event Times | Tracked Times | Due | Completion | Priority | Tags | Assignees |
-|-|-|-|-|-|-|-|-|-|-|-|
-| Finish projects description | 00000004 | 00000008 | 00000001 | [{ "start": 1541584800, "duration": 3600, "offset": None, }] | None | 1542672000 | False | 1 | ["Documentation"] | [00000001] |
+| Page Title | Project | Page ID | Parent ID | Workspace ID | Event Times | Tracked Times | Due | Completion | Priority | Tags | Assignees |
+|-|-|-|-|-|-|-|-|-|-|-|-|
+| Calico | True | 00000004 | 00000003 | 00000001 | None | None | None | False | 1 | ["Documentation"] | [00000001] |
+| Finish projects description | False | 00000004 | 00000003 | 00000001 | [{ "start": 1541584800, "duration": 3600, "offset": None, }] | None | { "start": 1542672000, "duration": None, "offset": None, } | False | 1 | ["Documentation"] | [00000001] |
 
